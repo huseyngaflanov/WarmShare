@@ -13,6 +13,7 @@
 //   });
 // }
 
+
 const navBtn1 = document.getElementById('nav-btn1');
 const navBtn2 = document.getElementById('nav-btn2');
 const navBtn3 = document.getElementById('nav-btn3');
