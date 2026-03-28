@@ -1,0 +1,25 @@
+#screen1 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#screen1 input {
+  height: 12vw;
+  width: 90vw;
+  max-height: 80px;
+  border-radius: 5vh;
+  outline: none;
+  font-size: 2em;
+  padding: 2rem;
+  background: none;
+  border: 3px solid var(--middleground);
+}
+
+#screen2 div.results {
+
+}
+
+#screen2 div.results div.result {
+  background-color: black;
+}
