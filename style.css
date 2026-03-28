@@ -1,0 +1,82 @@
+:root {
+  --background: #ffceab;
+  --middleground: #ffb682;
+  --foreground: #ff8f40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--background);
+
+}
+
+.main-nav {
+  position: relative;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-nav div.nav-btn {
+  background: var(--middleground);
+  padding: 1rem;
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.main-nav div.nav-btn:hover {
+  border-radius: 25%;
+}
+
+.main-nav div.selected {
+  border-radius: 30%;
+  background: var(--foreground);
+}
+
+main {
+  width: 100vw;
+  height: 92vh;
+  position: relative;
+}
+
+main div.screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  box-shadow: inset 0 -3em 3em var(--background);
+  display: none;
+}
+
+main div.selected {
+  display: flex;
+}
+
+#screen2 {
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
