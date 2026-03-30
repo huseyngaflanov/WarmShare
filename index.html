@@ -21,7 +21,7 @@
     </div>
     <div id="middle-screen" class="thirds-screen">
       <main>
-        <div id="screen1" class="screen selected">
+        <div id="screen1" class="screen">
           <h1 id="search-h1">Search!</h1>
           <input type="text" class="default" placeholder="What is it?" name="" value="" oninput="searchMode(this)" onfocus="searchMode(this)" onblur="outSearchMode(this)">
 
@@ -78,16 +78,30 @@
           </script>
         </div>
 
-        <div id="screen2" class="screen">
-
-
+        <div id="screen2" class="screen ">
           <h1>Hello, Huseyn!</h1>
           <div class="add-btn">
             <i class="fa-solid fa-plus"></i>
           </div>
         </div>
 
-        <div id="screen3" class="screen">
+
+
+        <div id="screen3" class="screen selected">
+
+          <div class="profile-pic">
+            <div class="inner">
+              <svg id="waveSvg" viewBox="0 0 160 160"></svg>
+              <img src="pp.jpg" alt="">
+            </div>
+          </div>
+          <script src="scripts/wave.js" charset="utf-8"></script>
+
+          <div class="profile-form">
+            <input type="text" class="name" name="" value="Your Name">
+            <input type="text" class="username" name="" value="your_username">
+            <button type="button" class="save" name="button">Save</button>
+          </div>
 
         </div>
       </main>

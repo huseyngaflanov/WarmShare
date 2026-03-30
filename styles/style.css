@@ -75,6 +75,10 @@ body:hover .cursor {
   cursor: pointer;
 }
 
+.main-nav div.nav-btn i {
+  transform: scale(1.2);
+}
+
 .main-nav div.nav-btn:hover {
   border-radius: 25%;
 }
@@ -120,16 +124,16 @@ main div.screen {
   height: 100%;
   overflow-y: scroll;
   box-shadow: inset 0px -60px 60px 20px var(--background);
-  display: none;
+  display: none !important;
   padding: 1rem;
 }
 
 main div.selected {
-  display: flex;
+  display: flex !important;
 }
 
 #leftscreen {
-
+  
 }
 
 #middle-screen  {

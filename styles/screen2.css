@@ -2,3 +2,23 @@
   flex-direction: column;
   font-size: 1.5rem;
 }
+
+#screen2 .add-btn {
+  background: var(--middleground);
+  width: 10vh;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 15vh;
+  right: 33vw;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+#screen2 .add-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
