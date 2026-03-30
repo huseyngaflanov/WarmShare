@@ -1,44 +1,80 @@
 #screen1 {
   flex-direction: column;
   align-items: center;
-  gap: 10rem;
+  justify-content: normal;
+  padding-top: 25vh;
 }
 
-#search h1 {
-  font-size: 2em;
+#screen1 h1 {
+  position: relative;
+  font-size: 3em;
+  opacity: 1;
+  transition: opacity 0.7s ease;
 }
 
-#search h1.search-h1 {
-  
+#screen1 h1.searching {
+  opacity: 0;
 }
 
 #screen1 input {
-  position: sticky;
-  top: 2vh;
-  height: 12vw;
-  width: 70vw;
+  position: relative;
+  height: 10%;
+  width: 100%;
   max-height: 80px;
-  border-radius: 5vh;
+  border-radius: 1000px;
   outline: none;
   font-size: 2em;
   padding: 2rem;
   background: var(--background);
   border: 3px solid var(--middleground);
-  margin: 2vh;
-  transition: all 1s ease;
+  transition: transform 0.8s ease;
+  z-index: 3;
 }
 
 #screen1 input.searching {
-  transform: translateY(calc(-50vh + 1.5rem + 12vw));
+  transform: translateY(-20vh);
 }
 
-#screen1 div.results {
-
+#screen1 div#search-results {
+  height: 50vh;
+  width: var(--thirds);
+  background: var(--background);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid var(--middleground);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 1.5rem;
+  overflow-y: scroll;
+  z-index: 2;
 }
 
-#screen1 div.results div.result {
-  width: 45vw;
-  border: 1px solid var(--middleground);
+#screen1 div.searching:not(:empty) {
+  opacity: 1 !important;
+}
+
+#screen1 div#search-results div.search-result {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.3rem;
+}
+
+#screen1 div#search-results div.search-result:hover {
+  background: var(--middleground);
+  cursor: pointer;
+}
+
+#screen1 div#search-results div.search-result .left {
+  display: flex;
+  flex-direction: column;
+}
+
+#screen1 div#search-results div.search-result .left .username {
+  font-size: 0.7rem;
+  color: var(--dim);
 }
