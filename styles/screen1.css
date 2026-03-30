@@ -30,7 +30,6 @@
   border: 3px solid var(--middleground);
   transition: transform 0.8s ease;
   z-index: 3;
-  tabindex="0";
 }
 
 #screen1 input.searching {
@@ -38,8 +37,9 @@
 }
 
 #screen1 div#search-results {
-  height: 50vh;
-  width: var(--thirds);
+  height: fit-content;
+  max-height: 50vh;
+  width: calc(var(--thirds) - 2rem);
   background: var(--background);
   position: fixed;
   top: 50%;

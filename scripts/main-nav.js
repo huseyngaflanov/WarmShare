@@ -22,6 +22,8 @@ const screen1 = document.getElementById('screen1');
 const screen2 = document.getElementById('screen2');
 const screen3 = document.getElementById('screen3');
 
+const navBtn2i = document.getElementById('nav-btn2-i');
+
 navBtn1.addEventListener('click', () => {
   navBtn1.className = 'nav-btn selected';
   navBtn2.className = 'nav-btn';
@@ -30,6 +32,8 @@ navBtn1.addEventListener('click', () => {
   screen1.className = 'screen selected';
   screen2.className = 'screen';
   screen3.className = 'screen';
+
+  navBtn2i.className = 'fa-regular fa-house';
 });
 
 navBtn2.addEventListener('click', () => {
@@ -40,6 +44,8 @@ navBtn2.addEventListener('click', () => {
   screen1.className = 'screen';
   screen2.className = 'screen selected';
   screen3.className = 'screen';
+
+  //navBtn2i.className = 'fa-solid fa-circle-plus';
 });
 
 navBtn3.addEventListener('click', () => {
@@ -50,4 +56,6 @@ navBtn3.addEventListener('click', () => {
   screen1.className = 'screen';
   screen2.className = 'screen';
   screen3.className = 'screen selected';
+
+  navBtn2i.className = 'fa-regular fa-house';
 });

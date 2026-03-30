@@ -59,12 +59,13 @@ body:hover .cursor {
   flex: 1;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10%;
 }
 
 .main-nav div.nav-btn {
   background: var(--middleground);
-  padding: 1.5rem;
+  padding: 1.7rem;
   aspect-ratio: 1 / 1;
   text-align: center;
   display: flex;
@@ -76,7 +77,11 @@ body:hover .cursor {
 }
 
 .main-nav div.nav-btn i {
-  transform: scale(1.2);
+  transform: scale(2);
+}
+
+.main-nav div.nav-btn i#nav-btn2-i.fa-circle-plus {
+  transform: scale(2.2);
 }
 
 .main-nav div.nav-btn:hover {
@@ -133,9 +138,10 @@ main div.selected {
 }
 
 #leftscreen {
-  
+
 }
 
 #middle-screen  {
-
+  border-left: 1px solid var(--middleground);
+  border-right: 1px solid var(--middleground);
 }
